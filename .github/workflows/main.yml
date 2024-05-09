@@ -23,7 +23,7 @@ jobs:
         env: 
           KEY_PATH: ${{ secrets.CHAVE_PEM }}
 
-      - name: Adicionar host ES2 ao known_hosts
+      - name: Adicionar host EC2 ao known_hosts
         run: |
           ssh-keygen -t rsa -b 4096 -f ~/.ssh/id_rsa -N ''
           ssh-kayscan -H 3.88.113.110 >> ~/.ssh/known_hosts
