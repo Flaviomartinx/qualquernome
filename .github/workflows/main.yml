@@ -7,7 +7,7 @@ on:
       - "main"
     paths:
       - images/**
-      - .github/workflows/mains.yml
+      - .github/workflows/main.yml
 jobs:
   efs-senai:
     runs-on: ubuntu-lastet
